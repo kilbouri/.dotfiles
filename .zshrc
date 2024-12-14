@@ -15,6 +15,11 @@ source ~/.zsh_aliases
 export EDITOR="vim"
 export VISUAL="$EDITOR"
 
+# Set Pager
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANROFFOPT="-c"
+
+
 # Workaround for kitty having actual standard behaviour for
 # `clear`, because I am unfortunately too used to xterm's
 # non-standard behaviour
