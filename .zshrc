@@ -19,7 +19,6 @@ export VISUAL="$EDITOR"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export MANROFFOPT="-c"
 
-
 # Workaround for kitty having actual standard behaviour for
 # `clear`, because I am unfortunately too used to xterm's
 # non-standard behaviour
@@ -33,6 +32,3 @@ clear() {
 
 # Use Ctrl + Backspace to erase a word
 bindkey '^H' backward-delete-word
-
-# ASDF mounting
-. /opt/asdf-vm/asdf.sh
